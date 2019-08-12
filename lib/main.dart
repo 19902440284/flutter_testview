@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'pages/page_progress.dart';
+import 'pages/page_floating.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -42,6 +44,14 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context){
                   return PageProgress();
+                }));
+              },
+            ),
+            RaisedButton(
+              child: Text("floatingActionButton位置"),
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  return PageFloating();
                 }));
               },
             )
